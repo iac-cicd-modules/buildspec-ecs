@@ -11,7 +11,7 @@ phases:
       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
   build:
     commands:
-      - docker login -u kxcsuporte -p a6mk8qOBb38i
+      - docker login -u user-docker -p password
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$SHA .
